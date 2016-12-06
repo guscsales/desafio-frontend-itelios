@@ -1,0 +1,24 @@
+@mixin bg-image ($image) {
+    background:{
+        image: $image;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+@mixin bg-cover($image) {
+    background:{
+        image: $image;
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+@mixin section-title-color($color){
+    color:$color;
+
+    &:before, &:after {
+        background-color: $color;
+    }
+}

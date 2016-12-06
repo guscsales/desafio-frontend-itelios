@@ -1,0 +1,17 @@
+/****************
+    VARIABLES
+****************/
+/**** TEXT *****/
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:700';
+object {
+  display: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #4d4d4d;
+  overflow-x: hidden; }
