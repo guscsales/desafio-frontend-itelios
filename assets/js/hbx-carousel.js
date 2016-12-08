@@ -27,12 +27,17 @@
 
         for(var i = 0; i < items.length; i++){
             if(i == index) 
-                items[i].className = 'active'
+                items[i].className = 'active';
             else
                 items[i].className = '';
         }
     }
 
+    /***
+     * General functions of carousel 
+     ***/
+
+    //  Movimentation
     var goTo = function(index){
         currentIndex = index;
 
@@ -40,7 +45,12 @@
 
     }
 
+    /***
+     * General Events 
+     ***/
 
+
+    //  Event for click on bullet
     var defineBulletItemClick = function(){
 
         var counter = wrapper.getElementsByClassName('counter')[0],
@@ -233,8 +243,16 @@
     /***
      * Constructor for initialize on any part of code 
      ***/
-    this.hbxCarousel = function(opts){
+    this.HbxCarousel = function(opts){
         initialize(opts);
     };
+
+    
+    /***
+     * Public Events 
+     ***/
+    HbxCarousel.prototype.goTo = function(index){
+        goTo(index);
+    }
 
 })(window);
