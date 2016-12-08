@@ -134,7 +134,7 @@ a{
             color:$btnColor; 
             border: $btnFullBorder;
             padding:  16px 19px 15px 19px;
-            background-image: url('/assets/images/cart-plus.png');
+            background-image: url('../images/cart-plus.png');
             background-size: 25px;
             background-repeat: no-repeat;
             background-position: calc(100% - 12px) center;
@@ -160,7 +160,7 @@ a{
 
             &:hover{
                 color:$darkerBlue;
-                background-image: url('/assets/images/cart-plus-hover.png');
+                background-image: url('../images/cart-plus-hover.png');
  
                 &:before{
                     opacity: 1;

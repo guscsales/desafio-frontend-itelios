@@ -107,7 +107,7 @@ a {
       color: #353f4f;
       border: 1px solid #d3d1d1;
       padding: 16px 19px 15px 19px;
-      background-image: url("/assets/images/cart-plus.png");
+      background-image: url("../images/cart-plus.png");
       background-size: 25px;
       background-repeat: no-repeat;
       background-position: calc(100% - 12px) center;
@@ -130,7 +130,7 @@ a {
         transition: all 0.2s ease; }
       .products-list-horizontal li .btn:hover {
         color: #1f2125;
-        background-image: url("/assets/images/cart-plus-hover.png"); }
+        background-image: url("../images/cart-plus-hover.png"); }
         .products-list-horizontal li .btn:hover:before {
           opacity: 1;
           visibility: visible; }
