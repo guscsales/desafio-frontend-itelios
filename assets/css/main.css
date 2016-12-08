@@ -69,12 +69,14 @@ a {
       display: inline-block;
       width: 100%; }
     .products-list-horizontal li .desc .name {
+      float: left;
       display: -webkit-box;
       height: 57px;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      color: #303132; }
     .products-list-horizontal li .desc .price {
       margin-top: 27px; }
       .products-list-horizontal li .desc .price strong {
@@ -153,4 +155,4 @@ a {
   #related-products header {
     margin-bottom: 24px; }
   #related-products .you-visited {
-    margin-right: 148px; }
+    margin-right: 152px; }

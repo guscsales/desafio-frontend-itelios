@@ -84,12 +84,14 @@ a{
             }
 
             .name{
+                float:left;
                 display: -webkit-box; 
                 height:57px;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                color:$textColor;
             }
 
             .price{
@@ -200,7 +202,7 @@ a{
     }
 
     .you-visited{
-        margin-right: 148px;
+        margin-right: 152px;
     }
 
 }
