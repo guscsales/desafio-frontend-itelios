@@ -33,6 +33,24 @@
         }
     }
 
+    var movimentation = function(index){
+        var itemWidth = items[0].offsetWidth,
+            translateValue = (_opts.itemsToMove * index);
+
+        if(itemsCount - translateValue < _opts.itemsToMove)
+            translateValue -= (_opts.itemsToMove - (itemsCount - translateValue));
+
+        translateValue *= itemWidth;
+        translateValue -= index;
+
+        if(translateValue > 0)
+            translateValue = -translateValue;
+        else
+            translateValue = 0;
+        
+        element.style.transform = 'translateX(' + translateValue + 'px)';
+    }
+
     /***
      * General functions of carousel 
      ***/
@@ -41,8 +59,8 @@
     var goTo = function(index){
         currentIndex = index;
 
+        movimentation(index);
         defineActiveBullet(index);
-
     }
 
     /***

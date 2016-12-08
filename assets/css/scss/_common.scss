@@ -42,12 +42,16 @@ a{
     color:$titleColor;
 } 
 
+.hbx-wrapper{
+    padding-left: 1px;
+}
 
 .products-list-horizontal{
     list-style: none;
     padding: 0;  
     position: relative;
     z-index: 1;    
+    transition: transform 0.22s ease; 
 
     li{
         float:left;

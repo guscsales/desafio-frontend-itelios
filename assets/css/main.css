@@ -42,11 +42,15 @@ a {
   font-weight: 700;
   color: #5e6774; }
 
+.hbx-wrapper {
+  padding-left: 1px; }
+
 .products-list-horizontal {
   list-style: none;
   padding: 0;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  transition: transform 0.22s ease; }
   .products-list-horizontal li {
     float: left;
     width: calc(25% + 1px);
