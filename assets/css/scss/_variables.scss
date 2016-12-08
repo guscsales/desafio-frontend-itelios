@@ -2,12 +2,58 @@
     VARIABLES
 ****************/
 
-/**** TEXT *****/
-$text_family: 'Roboto', sans-serif;
-$text_weight: normal;
-$text_color: #4d4d4d;
-$text_size: 13px;
+/**** COLORS *****/
 
-$h1_family: 'Roboto Condensed', sans-serif;
-$h1_weight: bold;
-$h1_size: 32px; 
+// -- gray
+$lightGray: #d3d1d1;
+$lightGray2: #edeaea;
+$lightGray3: #f4f4f4;
+$gray: #e0dcdc;
+$midGray: #adadad;
+$midGray2: #4d4d4d;
+$darkGray: #303132;
+
+// -- blue
+$midBlue: #5e6774;
+$darkBlue: #353f4f;
+$darkerBlue: #1f2125;
+
+// -- orange
+$orange: #ff6600;
+
+
+/**** TEXT *****/
+$textFamily: 'Roboto', sans-serif;
+$textWeight: normal;
+$textColor: $darkGray;
+$textSize: 16px;
+
+
+/**** TITLE *****/
+$titleFamily: 'Roboto Condensed', sans-serif;
+$titleWeight: 700; 
+$titleColor: $midBlue; 
+$titleSize: 29px; 
+
+
+/**** PRICES *****/
+$priceFamily: 'Roboto', sans-serif;
+$priceWeight: 700;
+$priceColor: $darkBlue;
+$priceSize: 23px;
+
+$splitPriceSize: 17px;
+$splitPriceColor: $priceColor;
+
+
+/**** BUTTON *****/
+$btnFamily: 'Roboto Condensed', sans-serif;
+$btnWeight: 700;
+$btnColor: $darkBlue;
+$btnSize: 21px;
+$btnFullBorder: 1px solid $lightGray;
+
+$btnHoverBorder: $orange;
+$btnHoverColor: $darkerBlue;
+$btnHoverColorCart: $orange;
+$btnHoverPadding: 15px 11px 15px 14px;
