@@ -22,7 +22,16 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1236px; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 940px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1236px; } }
 
 a {
   text-decoration: none; }
@@ -132,7 +141,7 @@ a {
   text-align: center;
   position: absolute;
   left: 0;
-  top: 459px;
+  top: 479px;
   cursor: default; }
   .counter span {
     width: 13px;
