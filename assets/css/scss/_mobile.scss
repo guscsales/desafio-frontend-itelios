@@ -9,7 +9,7 @@
         } 
     }
 
-    .counter{
+    .hbx-counter{
         position: relative;
         margin: 15px 0;
         top:auto;
@@ -34,11 +34,17 @@
         } 
     }
 
-    .counter{
+    .hbx-counter{
         position: relative;
         margin: 15px 0;
         top:auto;
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1099px) {}
+@media screen and (min-width:1024px) and (max-width:1240px) {
+    .products-list-horizontal{
+        li{
+            width:calc(33.333333% + 1px);
+        } 
+    }
+}

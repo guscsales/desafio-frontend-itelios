@@ -7,6 +7,9 @@
 git clone https://github.com/hebsix/desafio-frontend-itelios.git
 ```
 
+### NOTE
+Please run this on a server, like xampp, wamp, IIS or similar. Information about how run on Xampp below.
+
 ### Configure Xampp ###
 
 #### Windows

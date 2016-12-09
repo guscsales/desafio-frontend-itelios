@@ -32,14 +32,15 @@ body{
 
 a{
     text-decoration: none;
-
+ 
 }
 
-.h1{
+h2{
     font-family: $titleFamily;
     font-size: $titleSize;
     font-weight: $titleWeight;
     color:$titleColor;
+    margin: 27px 0 0;
 } 
 
 .hbx-wrapper{
@@ -52,6 +53,8 @@ a{
     position: relative;
     z-index: 1;    
     transition: transform 0.22s ease; 
+    float:left;
+    margin: 0;
 
     li{
         float:left;
@@ -175,13 +178,13 @@ a{
     }
 }
 
-.counter{
+.hbx-counter{
     width:100%;
     float:left;
     text-align: center;
     position: absolute;
     left: 0;
-    top: 479px;
+    top: 487px;
     cursor:default; 
 
     span {
@@ -207,8 +210,6 @@ a{
 }
 
 #related-products{
-    margin-top: 27px;
-    float: left;
     width: 100%;
     position: relative;
     

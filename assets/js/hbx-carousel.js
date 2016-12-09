@@ -12,6 +12,7 @@
     var wrapper,
         wrapperWidth,
         element,
+        counterElement,
         items,
         itemsCount,
         itemsViewCount,
@@ -22,7 +23,7 @@
 
 
     var defineActiveBullet = function(index){
-        var counter = wrapper.getElementsByClassName('counter')[0],
+        var counter = wrapper.getElementsByClassName('hbx-counter')[0],
             items = counter.getElementsByTagName('span');
 
         for(var i = 0; i < items.length; i++){
@@ -79,7 +80,7 @@
     //  Event for click on bullet
     var defineBulletItemClick = function(){
 
-        var counter = wrapper.getElementsByClassName('counter')[0],
+        var counter = wrapper.getElementsByClassName('hbx-counter')[0],
             items = counter.getElementsByTagName('span');
 
         for(var i = 0; i < items.length; i++){
@@ -153,10 +154,12 @@
         if(bulletsCount > 0){
             var divCounter = document.createElement('div');
 
-            divCounter.className = 'counter';
+            divCounter.className = 'hbx-counter';
             
             for(var i = 0; i < bulletsCount; i++)
                 divCounter.innerHTML += '<span></span>';
+
+            counterElement = divCounter;
 
             element.parentNode.insertBefore(divCounter, element.nextSibling);
 
@@ -260,9 +263,20 @@
         defineEvents();
     };
 
-    window.onresize = function(){
+    var reset = function(){
+        wrapper.removeChild(counterElement);
+        currentIndex = 0;
+
         resetSizes();
+    }
+
+    window.onresize = function(){
+        reset();
+        
         defineSizes();
+        createCounters();
+        defineActiveBullet(currentIndex);
+        defineBulletItemClick();
     }
 
 
