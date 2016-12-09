@@ -35,13 +35,21 @@
 
     var movimentation = function(index){
         var itemWidth = items[0].offsetWidth,
-            translateValue = (_opts.itemsToMove * index);
+            translateValue = (itemsViewCount * index);
 
-        if(itemsCount - translateValue < _opts.itemsToMove)
-            translateValue -= (_opts.itemsToMove - (itemsCount - translateValue));
+        if(itemsCount - translateValue < itemsViewCount)
+            translateValue -= (itemsViewCount - (itemsCount - translateValue));
 
         translateValue *= itemWidth;
-        translateValue -= index;
+
+        var fixedExtremity = index - 1;
+
+        if(fixedExtremity < 0)
+            fixedExtremity = 0;
+
+        translateValue -= itemsViewCount + fixedExtremity;
+
+        
 
         if(translateValue > 0)
             translateValue = -translateValue;
@@ -110,7 +118,7 @@
     var defineSizes = function(){
         wrapperWidth = element.offsetWidth;
 
-        divOverflow.style.width = wrapperWidth + 'px';
+        divOverflow.style.width = wrapperWidth + _opts.aditionalWidthWrapper + 'px';
 
         for(var i = 0; i < items.length; i++)
             items[i].style.width = items[i].offsetWidth + 'px';
@@ -234,8 +242,8 @@
         if(_opts.startIn == undefined)
             _opts.startIn = 0;
 
-        if(_opts.itemsToMove == undefined)
-            _opts.itemsToMove = 4;
+        if(_opts.aditionalWidthWrapper == undefined)
+            _opts.aditionalWidthWrapper = 0;
 
         currentIndex = 0;
 

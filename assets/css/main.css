@@ -170,3 +170,26 @@ a {
     margin-bottom: 24px; }
   #related-products .you-visited {
     margin-right: 152px; }
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .products-list-horizontal li {
+    width: 100%; }
+    .products-list-horizontal li .btn {
+      display: block; }
+  .counter {
+    position: relative;
+    margin: 15px 0;
+    top: auto; }
+  #related-products {
+    padding: 0 10px;
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .products-list-horizontal li {
+    width: calc(50% + 1px); }
+    .products-list-horizontal li .btn {
+      display: block; }
+  .counter {
+    position: relative;
+    margin: 15px 0;
+    top: auto; } }

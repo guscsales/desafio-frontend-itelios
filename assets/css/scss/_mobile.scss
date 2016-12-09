@@ -1,7 +1,44 @@
-@media screen and (min-width:0) and (max-width:767px) {}
+@media screen and (min-width:0) and (max-width:767px) {
+    .products-list-horizontal{
+        li{
+            width:100%;     
+
+            .btn{
+                display: block;
+            }   
+        } 
+    }
+
+    .counter{
+        position: relative;
+        margin: 15px 0;
+        top:auto;
+    }
+
+    #related-products{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
 
 @media screen and (min-width:0) and (max-width:479px) {}
 
-@media screen and (min-width:768px) and (max-width:1023px) {}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .products-list-horizontal{
+        li{
+            width:calc(50% + 1px);
+
+            .btn{
+                display: block;
+            }   
+        } 
+    }
+
+    .counter{
+        position: relative;
+        margin: 15px 0;
+        top:auto;
+    }
+}
 
 @media screen and (min-width:1024px) and (max-width:1099px) {}
