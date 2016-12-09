@@ -34,14 +34,24 @@ a{
     text-decoration: none;
  
 }
-
-h2{
+ 
+h2, .h2{
     font-family: $titleFamily;
     font-size: $titleSize;
     font-weight: $titleWeight;
     color:$titleColor;
     margin: 27px 0 0;
+    float:left;
 } 
+
+h2{
+    width:314px;
+}
+
+header{
+    float:left;
+    width:100%;
+}
 
 .hbx-wrapper{
     padding-left: 1px;

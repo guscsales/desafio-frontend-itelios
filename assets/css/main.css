@@ -36,12 +36,20 @@ body {
 a {
   text-decoration: none; }
 
-h2 {
+h2, .h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 29px;
   font-weight: 700;
   color: #5e6774;
-  margin: 27px 0 0; }
+  margin: 27px 0 0;
+  float: left; }
+
+h2 {
+  width: 314px; }
+
+header {
+  float: left;
+  width: 100%; }
 
 .hbx-wrapper {
   padding-left: 1px; }
