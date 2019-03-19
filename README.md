@@ -4,7 +4,7 @@
 
 * Get the project
 ```
-git clone https://github.com/hebsix/desafio-frontend-itelios.git
+git clone https://github.com/salesgu/desafio-frontend-itelios.git
 ```
 
 ### NOTE
